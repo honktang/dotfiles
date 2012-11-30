@@ -8,7 +8,7 @@
     # Yet Another Dotfile Repo v1.0
     # Now with Prezto!
 
-    git clone https://github.com/skwp/dotfiles ~/.yadr
+    git clone https://github.com/honktang/dotfiles ~/.yadr
     cd ~/.yadr && rake install
 
 This is a collection of best of breed tools from across the web,
