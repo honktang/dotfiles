@@ -102,3 +102,19 @@ set wildignore+=*.png,*.jpg,*.gif
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
+
+
+function Grunt_less()
+  let cmd = "silent !grunt less"
+  execute cmd
+endfunction
+
+function Grunt_uglify()
+  let cmd = "silent !grunt jshint uglify"
+  execute cmd
+endfunction
+
+autocmd BufWritePost,FileWritePost *.less call Grunt_less()
+autocmd BufWritePost,FileWritePost *.js call Grunt_uglify()
+
+
