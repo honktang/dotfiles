@@ -3,7 +3,6 @@ export PATH="/Users/$(whoami)/bin:$PATH"
 export PATH="${PATH}:/Users/$(whoami)/Backup/android-sdk-macosx/platform-tools:/Users/$(whoami)/Backup/android-sdk-macosx/tools"
 
 #alias
-alias vi=gvim
 alias vim=gvim
 
 alias remote_debug="adb forward tcp:9222 localabstract:chrome_devtools_remote"
@@ -13,7 +12,7 @@ alias remote_debug="adb forward tcp:9222 localabstract:chrome_devtools_remote"
 
 
 #restart_dropbox
-#/Users/honk/bin/re_dropbox
+/Users/honk/bin/re_dropbox
 
 #run shadowsocks
 /Users/honk/bin/shadowsocks
