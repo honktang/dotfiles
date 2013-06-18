@@ -32,9 +32,9 @@ alias ae='vi $yadr/zsh/aliases.zsh' #alias edit
 alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
 
 # vim using
-if [ "$(command -v brew)" ]; then
-  alias vim=$(brew ls macvim | grep Contents/MacOS/Vim)
-fi
+# if [ "$(command -v brew)" ]; then
+#   alias vim=$(brew ls macvim | grep Contents/MacOS/Vim)
+# fi
 
 # vimrc editing
 alias ve='vi ~/.vimrc'
