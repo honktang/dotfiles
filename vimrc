@@ -4,17 +4,17 @@ set nocompatible
 
 " TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
 " source ~/.vimrc.before if it exists.
-if filereadable(expand("~/.vimrc.before"))
-  source ~/.vimrc.before
-endif
+" if filereadable(expand("~/.vimrc.before"))
+"  source ~/.vimrc.before
+" endif
 
 " =============== Pathogen Initialization ===============
 " This loads all the plugins in ~/.vim/bundle
 " Use tpope's pathogen plugin to manage all other plugins
 
-  runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
-  call pathogen#infect()
-  call pathogen#helptags()
+"  runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
+"  call pathogen#infect()
+"  call pathogen#helptags()
 
 " ================ General Config ====================
 
@@ -51,9 +51,9 @@ set nowb
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
 
-silent !mkdir ~/.vim/backups > /dev/null 2>&1
-set undodir=~/.vim/backups
-set undofile
+" silent !mkdir ~/.vim/backups > /dev/null 2>&1
+" set undodir=~/.vim/backups
+" set undofile
 
 " ================ Indentation ======================
 
@@ -65,11 +65,13 @@ set softtabstop=4
 set tabstop=4
 set expandtab
 
+set ff=unix
+
 filetype plugin on
 filetype indent on
 
 " Display tabs and trailing spaces visually
-set list listchars=tab:\ \ ,trail:·
+"set list listchars=tab:\ \ ,trail:·
 
 set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
@@ -110,6 +112,9 @@ set sidescroll=1
 "set cursorcolumn
 set cursorline
 
+set encoding=utf-8
+set langmenu=zh_CN.UTF-8
+language message zh_CN.UTF-8
 
 
 
