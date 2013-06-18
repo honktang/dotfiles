@@ -107,8 +107,6 @@ set sidescroll=1
 
 
 
-
-
 "set cursorcolumn
 set cursorline
 
@@ -116,6 +114,8 @@ set encoding=utf-8
 set langmenu=zh_CN.UTF-8
 language message zh_CN.UTF-8
 
+colorscheme slate
+set guifont=Monaco:h14
 
 
 function Grunt_less()
